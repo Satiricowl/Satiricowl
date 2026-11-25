@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SatiricOwl | Official Website</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #090912;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #29213c;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover { color: #a78bfa; }
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle, #35215e, #090912 70%);
+}
+
+.hero h1 { font-size: 48px; }
+
+.purple { color: #a78bfa; }
+
+.hero p {
+    color: #bbb;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #8054e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    margin-top: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover { background: #9b78f5; }
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.card {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 30px;
+    background: #151522;
+    border: 1px solid #382b58;
+    border-radius: 16px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.amounts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.amount {
+    padding: 22px;
+    background: #211a35;
+    border: 1px solid #6545a0;
+    border-radius: 12px;
+}
+
+.amount h2 {
+    color: #b69aff;
+    margin: 0;
+}
+
+.amount p { margin-bottom: 0; }
+
+/* SUGGESTION FORM */
+
+form {
+    text-align: left;
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    margin: 18px 0 8px;
+    color: #c9b6ff;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    background: #0e0e19;
+    color: white;
+    border: 1px solid #49366e;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #8054e9;
+}
+
+.success {
+    display: none;
+    margin-top: 20px;
+    color: #b69aff;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    border-top: 1px solid #29213c;
+}
+
+footer a {
+    color: #a78bfa;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    nav a { font-size: 14px; }
+
+    .hero h1 { font-size: 34px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🦉 SatiricOwl</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#support">Support</a>
+        <a href="#suggestions">Suggestions</a>
+        <a href="#about">About</a>
+        <a href="https://www.youtube.com/@Satiricowl"
+           target="_blank">YouTube</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<div class="hero" id="home">
+    <h1>WELCOME TO <span class="purple">SATIRICOWL</span></h1>
+
+    <p>
+        VR gaming videos, updates, funny moments and much more!
+        Help make the channel bigger and better.
+    </p>
+
+    <a href="#suggestions" class="button">
+        GIVE ME A VIDEO IDEA
+    </a>
+</div>
+
+<!-- SUPPORT -->
+
+<section id="support">
+    <h1>🦉 Support the Owl</h1>
+    <p>Help me improve my videos and create even better content.</p>
+
+    <div class="card">
+        <h2>Why Support?</h2>
+
+        <p>
+            Your support helps towards better recording equipment,
+            new VR games and making more entertaining videos.
+        </p>
+
+        <div class="amounts">
+            <div class="amount">
+                <h2>£1</h2>
+                <p>Little Support</p>
+            </div>
+
+            <div class="amount">
+                <h2>£3</h2>
+                <p>Owl Support</p>
+            </div>
+
+            <div class="amount">
+                <h2>£5</h2>
+                <p>Super Support</p>
+            </div>
+
+            <div class="amount">
+                <h2>£10</h2>
+                <p>Legend Support</p>
+            </div>
+        </div>
+
+        <p>Payment options coming soon!</p>
+    </div>
+
+    <div class="card">
+        <h2>❤️ Thank You!</h2>
+        <p>
+            Even watching, liking and subscribing helps
+            the channel grow. Thank you for being here!
+        </p>
+    </div>
+</section>
+
+<!-- SUGGESTIONS -->
+
+<section id="suggestions">
+    <h1>💡 Video Suggestions</h1>
+
+    <p>
+        Got an idea for my next video?
+        Send it in! I might make it into a video.
+    </p>
+
+    <div class="card">
+        <h2>Suggest a Video</h2>
+
+        <p>
+            I'd love to hear what videos you want to see next!
+        </p>
+
+        <form id="suggestionForm">
+
+            <label for="username">
+                Your YouTube username (optional)
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Your username"
+                maxlength="40"
+            >
+
+            <label for="type">
+                Video type
+            </label>
+
+            <select id="type" required>
+                <option value="">Choose a category</option>
+                <option>VR Gameplay</option>
+                <option>Gilla VR</option>
+                <option>Updates</option>
+                <option>Challenges</option>
+                <option>Funny Moments</option>
+                <option>Other</option>
+            </select>
+
+            <label for="idea">
+                Your video idea
+            </label>
+
+            <textarea
+                id="idea"
+                placeholder="Tell me what video I should make..."
+                maxlength="500"
+                required
+            ></textarea>
+
+            <button type="submit" class="button">
+                SUBMIT IDEA
+            </button>
+
+            <div class="success" id="success">
+                Thanks for your suggestion! 🦉
+                <br>
+                This is a preview confirmation;
+                your idea hasn't been sent to the creator.
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+    <h1>About SatiricOwl</h1>
+
+    <div class="card">
+        <p>
+            Welcome to SatiricOwl! I create VR gaming videos,
+            updates, funny moments and much more.
+        </p>
+
+        <p>
+            The goal is to keep improving and making
+            every video better than the last.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 SatiricOwl | Thanks for the support 🦉
+
+    <p>
+        <a href="https://www.youtube.com/@Satiricowl"
+           target="_blank">
+           YouTube Channel
+        </a>
+    </p>
+</footer>
+
+<script>
+document.getElementById("suggestionForm")
+.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("success").style.display = "block";
+    this.reset();
+});
+</script>
+
+</body>
+</html>
